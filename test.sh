@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python myTest.py -path='save/PIN-multiwozdst/HDD400BSZ32DR0.3ACC-0.5152' -gs 1
