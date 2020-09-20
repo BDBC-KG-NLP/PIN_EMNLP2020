@@ -5,7 +5,7 @@ The code and data for EMNLP 2020 paper: [Parallel Interactive Networks for Multi
 In this project, we focus on the multi-domain dialogue state tracking (MDST) problem. In the existing MDST models, the dependencies between system and user utterances in the same turn and across different turns are not fully considered. In this study, we argue that the incorporation of these dependencies is crucial for the design of a MDST model. These dependencies exist because of the interactive nature of the dialogues. The interaction of the user and the system is often organized by a question-answering style. It is common in dialogue state tracking that a domain or slot being specified by one of the user or system, then the value being answered by the other. For example, in the dialogue in Figure 1, the user specifies a Restaurant domain, and the system answers a restaurant name Curry Garden. As is shown in Figure 1, both in-turn dependencies and cross-turn dependencies contribute to discovering slotv-alue pairs.
 
 <p align="center">
-  <img src="./fig/depend.png" width="380"/> <img src="./fig/interact.png" width="420"/>
+  <img src="./fig/dep.png" width="390"/> <img src="./fig/interact.png" width="410"/>
 </p>
 
 <p align="center">
