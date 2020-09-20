@@ -7,3 +7,9 @@ In this project, we focus on the multi-domain dialogue state tracking (MDST) pro
 <p align="center">
   <img src="./fig/depend.png">
 </p>
+
+We first build an Interactive Encoder which completely accords with the dependencies expressed in Figure 1 to jointly model the in-turn dependencies and cross-turn dependencies. As is shown in Figure 2, the Interactive Encoder consists of two parallel recurrent networks. 
+
+<p align="center">
+  <img src="./fig/inter.png">
+</p>
