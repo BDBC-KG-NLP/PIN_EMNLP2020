@@ -11,7 +11,7 @@ In this project, we focus on the multi-domain dialogue state tracking (MDST) pro
 We also consider the slot overlapping problem in MDST. Unlike single-domain DST, slot overlapping is common in MDST and these overlapping slots share the similar values. For example, both Restaurant and Hotel domain have a slot price range which shares the same values. Under this condition, a generator without considering slotspecific features may mistakenly extract the value of one slot as the value of some other slot. To overcoming the slot overlapping problem, we introduce a slot-level context in the state generator. In addition, we also propose a distributed copy mechanism to selectively copy words from historical system utterances or historical user utterances. The overall structure of the proposed model is shown in Figure 3.
 
 <p align="center">
-  <img src="./fig/overall.png">
+  <img src="./fig/overall.png" width="700" />
 </p>
 
 Empirical studies demonstrated the superiority of the proposed PIN model.
