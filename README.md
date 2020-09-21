@@ -21,13 +21,12 @@ Our implementation of the PIN model is based on the baseline model TRADE (Wu et 
 </p>
 
 ## Datasets
-Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the processed data as well as the raw data for these two datasets. The datasets can be downloaded from the [Google Drive](https://drive.google.com/drive/folders/1Hg2d9leN2RJ_sowcSLHC8g4JrFca8kRg?usp=sharing) or the [Baidu Cloud](https://pan.baidu.com/s/1qd9XhU_1N3GHfq95-d-_OA)(access code: hkw6)
+Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the processed data as well as the raw data for these two datasets. The datasets can be downloaded from the [Google Drive](https://drive.google.com/drive/folders/1Hg2d9leN2RJ_sowcSLHC8g4JrFca8kRg?usp=sharing) or the [Baidu Cloud](https://pan.baidu.com/s/1qd9XhU_1N3GHfq95-d-_OA) (access code: hkw6).
 
 ## Training and Evaluation
-+ Unzip the processed data into the "__data__" directory.
-+ Configurate the models in the __config.py__. The default configurations for TEN-XH,TEN-X,TEN-Y and TEN are provided but commented. If you want to use the default configurations, just __uncomment the corresponding lines__. Note that the TEN model is initialized by a pre-trained TEN-X model, so before you run the TEN model, you should first run a TEN-X model and set the "__args\['resume'\]__" in the config.py.
-+ Training: use the command __sh run.sh__ to run the models.
-+ Test: use the command __sh test.sh__ to evaluate the models.
++ Download the "__processed.zip__" from one of the dataset links. Unzip processed.zip and copy corresponding "__data__" directory into the root directory of the project.
++ Training: use the command __sh run.sh__ to run the models. You are expected to run the training script in the Python 3 environment.
++ Test: use the command __sh test.sh__ to evaluate the models. Note: running test script in the Python 3 environment may encounter unexpected errors, we suggest testing the models in the Python 2 environment.
 
 
 ## References
