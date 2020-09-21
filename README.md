@@ -21,7 +21,7 @@ Our implementation of the PIN model is based on the baseline model TRADE (Wu et 
 </p>
 
 ## Datasets
-Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the processed data as well as the raw data for these two datasets. The datasets can be downloaded from the [Google Drive](https://drive.google.com/drive/folders/1Hg2d9leN2RJ_sowcSLHC8g4JrFca8kRg?usp=sharing) or the [Baidu Cloud](https://pan.baidu.com/s/1qd9XhU_1N3GHfq95-d-_OA)(hkw6)
+Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the processed data as well as the raw data for these two datasets. The datasets can be downloaded from the [Google Drive](https://drive.google.com/drive/folders/1Hg2d9leN2RJ_sowcSLHC8g4JrFca8kRg?usp=sharing) or the [Baidu Cloud](https://pan.baidu.com/s/1qd9XhU_1N3GHfq95-d-_OA)(access code: hkw6)
 
 ## Training and Evaluation
 + Unzip the processed data into the "__data__" directory.
