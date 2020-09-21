@@ -17,5 +17,5 @@ We also consider the slot overlapping problem in MDST. Unlike single-domain DST,
 The evaluation results on the MultiWOZ2.0 dataset and MultiWOZ2.1 dataset are shown in Table 1 and Table 2.
 
 <p align="center">
-  <img src="./fig/dep.png" width="430"/> <img src="./fig/interact.png" width="400"/>
+  <img src="./fig/mwoz0.png" width="400"/> <img src="./fig/mwoz1.png" width="430"/>
 </p>
