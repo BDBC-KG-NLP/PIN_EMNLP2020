@@ -17,7 +17,7 @@ We also consider the slot overlapping problem in MDST. Unlike single-domain DST,
 Our implementation of the PIN model is based on the baseline model TRADE (Wu et al., 2019). We evaluate the models on the MultiWOZ2.0 dataset (Budzianowski et al., 2018) and MultiWOZ2.1 dataset (Eric et al., 2020). The evaluation results are shown in Table 1 and Table 2. The PIN model became a new state-of-the-art model on the MultiWOZ2.0 dataset. Although PIN performs worse than DST-Picklist on the MultiWOZ2.1 dataset, it improves upon the baseline model TRADE by a significant margin.
 
 <p align="center">
-  <img src="./fig/mwoz0.png" width="380"/> <img src="./fig/mwoz1.png" width="440"/>
+  <img src="./fig/mwoz20.png" width="380"/> <img src="./fig/mwoz21.png" width="440"/>
 </p>
 
 ## References
