@@ -1,5 +1,5 @@
 # PIN_EMNLP2020
-The code and data for EMNLP 2020 paper: [Parallel Interactive Networks for Multi-Domain Dialogue State Generation](https://arxiv.org/pdf/2009.07616.pdf)
+The code and data for EMNLP 2020 paper: [Parallel Interactive Networks for Multi-Domain Dialogue State Generation](https://arxiv.org/pdf/2009.07616.pdf). The code is implemented using Pytorch.
 
 ## Description
 In this project, we focus on the multi-domain dialogue state tracking (MDST) problem. In the existing MDST models, the dependencies between system and user utterances in the same turn and across different turns are not fully considered. In this study, we argue that the incorporation of these dependencies is crucial for the design of a MDST model. These dependencies exist because of the interactive nature of the dialogues. The interaction of the user and the system is often organized by a question-answering style. It is common in dialogue state tracking that a domain or slot being specified by one of the user or system, then the value being answered by the other. For example, in the dialogue in Figure 1, the user specifies a Restaurant domain, and the system answers a restaurant name Curry Garden. As is shown in Figure 1, both in-turn dependencies and cross-turn dependencies contribute to discovering slotv-alue pairs. Based on the the interactive nature of the dialogues, we build an Interactive Encoder which completely accords with the dependencies expressed in Figure 1 to jointly model the in-turn dependencies and cross-turn dependencies. As is shown in Figure 2, the Interactive Encoder consists of two parallel recurrent networks which interleave their hidden states.
@@ -19,6 +19,16 @@ Our implementation of the PIN model is based on the baseline model TRADE (Wu et 
 <p align="center">
   <img src="./fig/mwoz20.png" width="380"/> <img src="./fig/mwoz21.png" width="440"/>
 </p>
+
+## Datasets
+Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the processed data as well as the raw data for these two datasets. The datasets can be downloaded from the [Google Drive](https://drive.google.com/drive/folders/1Hg2d9leN2RJ_sowcSLHC8g4JrFca8kRg?usp=sharing) or the [Baidu Cloud](https://pan.baidu.com/s/1qd9XhU_1N3GHfq95-d-_OA)(hkw6)
+
+## Training and Evaluation
++ Unzip the processed data into the "__data__" directory.
++ Configurate the models in the __config.py__. The default configurations for TEN-XH,TEN-X,TEN-Y and TEN are provided but commented. If you want to use the default configurations, just __uncomment the corresponding lines__. Note that the TEN model is initialized by a pre-trained TEN-X model, so before you run the TEN model, you should first run a TEN-X model and set the "__args\['resume'\]__" in the config.py.
++ Training: use the command __sh run.sh__ to run the models.
++ Test: use the command __sh test.sh__ to evaluate the models.
+
 
 ## References
 [Budzianowski et al., 2018] Pawel Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Inigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic. MultiWOZ-A Large-Scale Multi Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling. In EMNLP 2018.
