@@ -14,7 +14,7 @@ We also consider the slot overlapping problem in MDST. Unlike single-domain DST,
   <img src="./fig/overall.png" width="700" />
 </p>
 
-Our implementation of the PIN model is based on the baseline model TRADE (Wu et al., 2019). We evaluate the models on the MultiWOZ2.0 dataset (Budzianowski et al., 2018) and MultiWOZ2.1 dataset (Eric et al., 2019). The evaluation results are shown in Table 1 and Table 2.
+Our implementation of the PIN model is based on the baseline model TRADE (Wu et al., 2019). We evaluate the models on the MultiWOZ2.0 dataset (Budzianowski et al., 2018) and MultiWOZ2.1 dataset (Eric et al., 2020). The evaluation results are shown in Table 1 and Table 2. The PIN model became a new state-of-the-art model on the MultiWOZ2.0 dataset. Although PIN performs worse than DST-Picklist on the MultiWOZ2.1 dataset, it improves upon the baseline model TRADE by a significant margin.
 
 <p align="center">
   <img src="./fig/mwoz0.png" width="380"/> <img src="./fig/mwoz1.png" width="440"/>
@@ -22,5 +22,7 @@ Our implementation of the PIN model is based on the baseline model TRADE (Wu et 
 
 ## References
 [Budzianowski et al., 2018] Pawel Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Inigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic. MultiWOZ-A Large-Scale Multi Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling. In EMNLP 2018.
+
 [Wu et al., 2019] Chien-Sheng Wu, Andrea Madotto, Ehsan Hosseini-Asl, Caiming Xiong, Richard Socher and Pascale Fung. Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems. In ACL 2019.
+
 [Eric et al., 2020] Mihail Eric, Rahul Goel, Shachi Paul, Abhishek Sethi, Sanchit Agarwal, Shuyang Gao and Dilek Hakkani-Tur. MultiWOZ 2.1: A Consolidated Multi-Domain Dialogue Dataset with State Corrections and State Tracking Baselines. In LREC 2020.
