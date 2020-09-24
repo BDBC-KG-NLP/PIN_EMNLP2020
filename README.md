@@ -25,9 +25,8 @@ Both MultiWOZ2.0 and MultiWOZ2.1 datasets are publicly available. We provide the
 
 ## Training and Evaluation
 + Download the "__processed.zip__" from one of the dataset links. Unzip processed.zip and copy corresponding "__data__" directory into the root directory of the project.
-+ Training: use the command __sh run.sh__ to run the models. You are expected to run the training script in the Python 3 environment.
-+ Test: use the command __sh test.sh__ to evaluate the models. Note: running test script in the Python 3 environment may encounter unexpected errors, we suggest testing the models in the Python 2 environment.
-
++ Training: use the command __sh run.sh__ to run the models. 
++ Test: use the command __sh test.sh__ to evaluate the models.
 
 ## References
 [Budzianowski et al., 2018] Pawel Budzianowski, Tsung-Hsien Wen, Bo-Hsiang Tseng, Inigo Casanueva, Stefan Ultes, Osman Ramadan and Milica Gasic. MultiWOZ-A Large-Scale Multi Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling. In EMNLP 2018.
