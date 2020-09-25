@@ -49,7 +49,7 @@ for epoch in range(50):
         
         acc = model.evaluate(dev, avg_best, SLOTS_LIST[2], early_stop)
         model.scheduler.step(acc)
-        with open('train_records.txt', 'ab+') as f:
+        with open('train_records.txt', 'a') as f:
             f.write('   '.join([str(epoch), str(acc)])+'\n')        
 
         if(acc >= avg_best):
